@@ -3,7 +3,7 @@
 This project is building a an application that will help organize and manage a bookstore in a fictional company, using react-redux.
 
 ## Live demo [Heroku]
-https://calculator-hen.herokuapp.com/ 
+[Book Store App](https://hen-book-store.herokuapp.com/)
 
 ## Built With
 
