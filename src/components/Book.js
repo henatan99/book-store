@@ -8,3 +8,5 @@ const Book = (book) => {
         <td class="book-category">book.category</td>
     </tr>
 }
+
+export default connect()(Book)
