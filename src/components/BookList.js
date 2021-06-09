@@ -1,3 +1,5 @@
+import { connect } from "react-redux"
+
 const BookList = (books) => {
     return (
         <div>
@@ -6,15 +8,13 @@ const BookList = (books) => {
                 <th>Title</th>
                 <th>Category</th>
             </tr>
-            {books.map((row, key) => {
-                <tr>
-                   <td>row.id</td>
-                   <td>row.title</td>
-                   <td>row.category</td>
-                </tr>
-            })}
+            {books && books.length 
+                ? books.map((book, index) => {
+                return <Book key ={`book-${book.id}`} book={book} />
+            }) 
+            : "No booklist to show!"}
         </div>
     )
 }
 
-export default BookList
+export default connect()(BookList)
