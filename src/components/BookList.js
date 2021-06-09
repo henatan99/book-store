@@ -17,4 +17,8 @@ const BookList = (books) => {
     )
 }
 
-export default connect()(BookList)
+const mapStateToProps = (state) => {
+    return {books}
+}
+
+export default connect(mapStateToProps)(BookList)
