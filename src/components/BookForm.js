@@ -12,7 +12,7 @@ class BookForm extends React.Component {
     }
 
     handleAddBook = () => {
-        
+
     }
     
 
@@ -23,8 +23,16 @@ class BookForm extends React.Component {
             <form>
                 <input onChange={e => this.updateInput(e.target.value)} 
                 value={this.state.title} />
-                <select onChange={e => this.updateInput(e.target.value)} 
-                value={this.state.category} />
+                <select name="category" id="category" 
+                    onChange={e => this.updateInput(e.target.value)} 
+                    value={this.state.category} >
+                    {CATEGORIES.map((category) => {
+                        return (
+                            <option value={category}>{category}</option>
+                        )
+                    }
+                    )}
+                </select>
                 <button onClick={this.handleAddBook}>Add Book</button>
             </form>
         )
