@@ -27,11 +27,8 @@ class BookForm extends React.Component {
                     onChange={e => this.updateInput(e.target.value)} 
                     value={this.state.category} >
                     {CATEGORIES.map((category) => {
-                        return (
-                            <option value={category}>{category}</option>
-                        )
-                    }
-                    )}
+                        return <option value={category}>{category}</option>
+                    })}
                 </select>
                 <button onClick={this.handleAddBook}>Add Book</button>
             </form>
