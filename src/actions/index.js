@@ -1,3 +1,6 @@
+const CREATE_BOOK = "CREATE_BOOK";
+const REMOVE_BOOK = "REMOVE_BOOK";
+
 let nextBookId = 0;
 
 export const createBook = book => ({
