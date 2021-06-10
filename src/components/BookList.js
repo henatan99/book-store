@@ -1,19 +1,25 @@
 /* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/prop-types */
 
+import React from 'react';
 import { connect } from 'react-redux';
 import Book from './Book';
 
-const BookList = (books) => (
-  <div>
-    <tr>
-      <th>ID</th>
-      <th>Title</th>
-      <th>Category</th>
-    </tr>
-    {books && books.length
-      ? books.map((book) => <Book key={`book-${book.id}`} book={book} />)
-      : 'No booklist to show!'}
-  </div>
+const BookList = ({ books }) => (
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Category</th>
+      </tr>
+    </thead>
+    <tbody>
+      {books && books.length
+        ? books.map((book) => <Book key={`book-${book.id}`} book={book} />)
+        : alert('No booklist to show!')}
+    </tbody>
+  </table>
 );
 
 const getBookList = (store) => (store && store.todos ? store.todos.allIds : []);
