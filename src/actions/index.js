@@ -6,7 +6,7 @@ let nextBookId = 0;
 export const createBook = book => ({
   type: CREATE_BOOK,
   payload: {
-    id: ++nextTodoId,
+    id: ++nextBookId,
     book
   }
 });
