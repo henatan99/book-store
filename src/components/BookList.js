@@ -1,24 +1,27 @@
-import { connect } from "react-redux"
+/* eslint-disable react/destructuring-assignment */
 
-const BookList = (books) => {
-    return (
-        <div>
-            <tr>
-                <th>ID</th>
-                <th>Title</th>
-                <th>Category</th>
-            </tr>
-            {books && books.length 
-                ? books.map((book, index) => {
-                return <Book key ={`book-${book.id}`} book={book} />
-            }) 
-            : "No booklist to show!"}
-        </div>
-    )
-}
+import { connect } from 'react-redux';
+import Book from './Book';
+
+const BookList = (books) => (
+  <div>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Category</th>
+    </tr>
+    {books && books.length
+      ? books.map((book) => <Book key={`book-${book.id}`} book={book} />)
+      : 'No booklist to show!'}
+  </div>
+);
+
+const getBookList = (store) => (store && store.todos ? store.todos.allIds : []);
 
 const mapStateToProps = (state) => {
-    return {books}
-}
+  const { allBookList } = state;
+  const books = getBookList(state, allBookList);
+  return { books };
+};
 
-export default connect(mapStateToProps)(BookList)
+export default connect(mapStateToProps)(BookList);

@@ -1,17 +1,17 @@
-const CREATE_BOOK = "CREATE_BOOK";
-const REMOVE_BOOK = "REMOVE_BOOK";
+const CREATE_BOOK = 'CREATE_BOOK';
+const REMOVE_BOOK = 'REMOVE_BOOK';
 
-let nextBookId = 0;
+const nextBookId = 0;
 
-export const createBook = book => ({
+export const createBook = (book) => ({
   type: CREATE_BOOK,
   payload: {
-    id: ++nextBookId,
-    book
-  }
+    id: nextBookId + 1,
+    book,
+  },
 });
 
-export const removeBook = book => ({
+export const removeBook = (book) => ({
   type: REMOVE_BOOK,
-  payload: { book }
+  payload: { book },
 });
