@@ -6,7 +6,7 @@ import { createBook } from '../actions/index';
 class BookForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { id: Math.floor(Math.random() * 100), title: '', category: '' };
+    this.state = { title: '', category: '' };
     this.updateTitle = this.updateTitle.bind(this);
     this.updateCategory = this.updateCategory.bind(this);
     this.handleAddBook = this.handleAddBook.bind(this);
