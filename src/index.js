@@ -10,12 +10,12 @@ const initialState = {
   books: [
     {
       id: Math.floor(Math.random() * 100),
-      title: 'Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future',
-      category: 'Biography',
+      title: 'The Theory of Everything',
+      category: 'Sci-Fi',
     },
     {
       id: Math.floor(Math.random() * 100),
-      title: 'Sapiens: A Brief History of Humankind',
+      title: 'Adwa: African Victory',
       category: 'History',
     },
   ],
