@@ -6,23 +6,24 @@ import { createBook } from '../actions/index';
 class BookForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { title: '', category: '' };
-    this.updateTitle = this.updateTitle.bind(this);
-    this.updateCategory = this.updateCategory.bind(this);
+    this.state = { title: '', category: 'Action' };
+    this.handleChange = this.handleChange.bind(this);
     this.handleAddBook = this.handleAddBook.bind(this);
   }
 
-    updateTitle = (title) => {
-      this.setState({ id: this.id, title, category: this.category });
+  handleChange = (event) => {
+    if (event.target.name === 'title') {
+      this.setState({ title: event.target.value });
+    } else {
+      this.setState({ category: event.target.value });
     }
-
-    updateCategory = (category) => {
-      this.setState({ id: this.id, title: this.title, category });
-    }
+    console.log(this.state);
+  }
 
     handleAddBook = () => {
       const { createBook } = this.props;
       createBook(this.state);
+      console.log(this.state);
       this.setState({ title: '', category: '' });
     }
 
@@ -34,16 +35,17 @@ class BookForm extends React.Component {
         <form onSubmit={this.handleAddBook}>
           <input
             name="title"
-            onChange={(e) => this.updateTitle(e.target.value)}
             value={title}
+            onChange={this.handleChange}
           />
           <select
             name="category"
             id="category"
-            onChange={(e) => this.updateCategory(e.target.value)}
+            // onSelect={(e) => this.updateCategory(e.target.value)}
+            onChange={this.handleChange}
             value={category}
           >
-            {CATEGORIES.map((category) => <option key={`book-${category}`}>{category}</option>)}
+            {CATEGORIES.map((category) => <option key={`book-${category}`} value={category}>{category}</option>)}
           </select>
           <button type="submit">Add Book</button>
         </form>
