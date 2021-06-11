@@ -1,16 +1,26 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { removeBook } from '../actions';
 
-const Book = (book) => {
+const Book = ({ book, handleRemoveBook }) => (
   <tr className="book">
     <td className="book-id">{book.id}</td>
     <td className="book-title">{book.title}</td>
     <td className="book-category">{book.category}</td>
     <td className="book-category">
-      <button type="button" onClick={() => { removeBook(book); }}>Remove</button>
+      <button type="button" onClick={handleRemoveBook}>Remove</button>
     </td>
-  </tr>;
+  </tr>
+);
+
+Book.propTypes = {
+  book: PropTypes.objectOf(PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+  })).isRequired,
+  handleRemoveBook: PropTypes.func.isRequired,
 };
 
 export default connect(null, { removeBook })(Book);

@@ -1,39 +1,17 @@
-export const CREATE_BOOK = 'CREATE_BOOK';
-export const REMOVE_BOOK = 'REMOVE_BOOK';
+const CREATE_BOOK = 'CREATE_BOOK';
+const REMOVE_BOOK = 'REMOVE_BOOK';
 
-const iniatialState = {
-  allIds: [],
-  byIds: {},
-};
-
-export default function (state = iniatialState, action) {
+export default function (state = [], action) {
   switch (action.type) {
     case CREATE_BOOK: {
-      const { id, book } = action.payload;
-      return {
-        ...state,
-        allIds: [...state.allIds, id],
-        byIds: {
-          ...state.byIds,
-          [id]: {
-            book,
-            removed: false,
-          },
-        },
-      };
+      const { book } = action.book;
+      return [
+        ...state, { book },
+      ];
     }
     case REMOVE_BOOK: {
-      const { id } = action.payload;
-      return {
-        ...state,
-        byIds: {
-          ...state.byIds,
-          [id]: {
-            ...state.byIds[id],
-            removed: true,
-          },
-        },
-      };
+      const { id } = action.book.id;
+      return state.filter((book) => book.id !== id);
     }
     default:
       return state;

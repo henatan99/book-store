@@ -2,9 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { Provider } from 'react-redux';
-import { store } from './store';
+import configureStore from './store/configureStore';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
+
+const initialState = {
+  books: [
+    {
+      id: Math.floor(Math.random() * 100),
+      title: 'Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future',
+      category: 'Biography',
+    },
+    {
+      id: Math.floor(Math.random() * 100),
+      title: 'Sapiens: A Brief History of Humankind',
+      category: 'History',
+    },
+  ],
+
+};
+
+const store = configureStore(initialState);
 
 ReactDOM.render(
   <React.StrictMode>
