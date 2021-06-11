@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
-import BookForm from './BookForm';
-import BookList from './BookList';
+import BookForm from '../containers/BookForm';
+import BookList from '../containers/BookList';
 
 function App() {
   return (
