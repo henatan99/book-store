@@ -42,7 +42,6 @@ class BookForm extends React.Component {
           <select
             name="category"
             id="category"
-            // onSelect={(e) => this.updateCategory(e.target.value)}
             onChange={this.handleChange}
             value={category}
           >

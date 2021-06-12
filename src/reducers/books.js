@@ -1,4 +1,4 @@
-import {  CREATE_BOOK, REMOVE_BOOK } from '../actions/actionTypes';
+import { CREATE_BOOK, REMOVE_BOOK } from '../actions/actionTypes';
 
 export default function (books = [], action) {
   switch (action.type) {
