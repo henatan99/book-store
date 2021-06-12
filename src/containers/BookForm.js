@@ -17,7 +17,6 @@ class BookForm extends React.Component {
     } else {
       this.setState({ category: event.target.value });
     }
-    console.log(this.state);
   }
 
     handleAddBook = (e) => {
@@ -25,7 +24,6 @@ class BookForm extends React.Component {
       const { createBook } = this.props;
       const book = { id: Math.floor(Math.random() * 100), ...this.state };
       createBook(book);
-      console.log(this.state);
       this.setState({ title: '', category: '' });
     }
 

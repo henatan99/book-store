@@ -8,8 +8,7 @@ export default function (books = [], action) {
       ];
     }
     case REMOVE_BOOK: {
-      const { id } = action.book.id;
-      return books.filter((book) => book.id !== id);
+      return books.filter((book) => book.id !== action.book.id);
     }
     default:
       return books;

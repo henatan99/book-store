@@ -5,7 +5,10 @@ import { removeBook } from '../actions/index';
 import Book from '../components/Book';
 
 const BookList = ({ books }) => {
-  const handleRemoveBook = (book) => removeBook(book);
+  const handleClick = (book) => {
+    removeBook(book);
+  };
+
   return (
     <table>
       <thead>
@@ -18,7 +21,7 @@ const BookList = ({ books }) => {
       </thead>
       <tbody>
         {books && books.length
-          ? books.map((book) => <Book key={`book-${book.id}`} book={book} handleRemoveBook={handleRemoveBook} />)
+          ? books.map((book) => <Book key={`book-${book.id}`} book={book} handleRemoveBook={() => handleClick(book)} />)
           : alert('No booklist to show!')}
       </tbody>
     </table>

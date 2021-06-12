@@ -1,18 +1,11 @@
 import { CREATE_BOOK, REMOVE_BOOK } from './actionTypes';
 
-export const createBook = ({
-  title = '',
-  category = '',
-} = {}) => ({
+export const createBook = (book) => ({
   type: CREATE_BOOK,
-  book: {
-    id: Math.floor(Math.random() * 100),
-    title,
-    category,
-  },
+  book,
 });
 
 export const removeBook = (book) => ({
   type: REMOVE_BOOK,
-  payload: book,
+  book,
 });
