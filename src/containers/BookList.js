@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { removeBook } from '../actions/index';
 import Book from '../components/Book';
@@ -22,13 +23,13 @@ const BookList = ({ books }) => (
   </table>
 );
 
-BookList.propTypes = {
-  books: PropTypes.shape([]),
-};
+// BookList.propTypes = {
+//   books: PropTypes.shape([]),
+// };
 
-BookList.defaultProps = {
-  books: [],
-};
+// BookList.defaultProps = {
+//   books: [],
+// };
 
 const mapStateToProps = (state) => ({
   books: state.books,
