@@ -22,7 +22,7 @@ class BookForm extends React.Component {
 
     handleAddBook = () => {
       const { createBook } = this.props;
-      const book = { ...{ id: Math.floor(Math.random() * 100) }, ...this.state };
+      const book = { id: Math.floor(Math.random() * 100), ...this.state };
       createBook(book);
       console.log(this.state);
       this.setState({ title: '', category: '' });

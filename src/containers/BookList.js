@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import { removeBook } from '../actions/index';
 import Book from '../components/Book';
 
+const handleRemoveBook = (book) => removeBook(book);
+
 const BookList = ({ books }) => (
   <table>
     <thead>
@@ -16,7 +18,7 @@ const BookList = ({ books }) => (
     </thead>
     <tbody>
       {books && books.length
-        ? books.map((book) => <Book key={`book-${book.id}`} book={book} handleRemoveBook={() => removeBook(book)} />)
+        ? books.map((book) => <Book key={`book-${book.id}`} book={book} handleRemoveBook={handleRemoveBook} />)
         : alert('No booklist to show!')}
     </tbody>
   </table>
@@ -24,7 +26,6 @@ const BookList = ({ books }) => (
 
 BookList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.object).isRequired,
-  removeBook: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = (state) => ({
