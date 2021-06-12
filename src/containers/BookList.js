@@ -32,4 +32,8 @@ const mapStateToProps = (state) => ({
   books: state.books,
 });
 
-export default connect(mapStateToProps)(BookList);
+const mapDispatchToProps = () => {
+  handleRemoveBook
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(BookList);
