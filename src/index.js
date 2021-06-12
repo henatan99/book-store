@@ -24,6 +24,13 @@ const initialState = {
 
 const store = configureStore(initialState);
 
+store.subscribe(() => {
+  const {
+    books,
+  } = store.getState();
+  console.log('books', books);
+});
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

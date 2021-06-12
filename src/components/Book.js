@@ -16,3 +16,5 @@ Book.propTypes = {
   book: PropTypes.objectOf(PropTypes.any).isRequired,
   handleRemoveBook: PropTypes.func.isRequired,
 };
+
+export default Book;
