@@ -16,10 +16,10 @@ const BookList = ({
 
   return (
     <div>
-      <header>
+      <div calss="books-header">
         <h1>Book Store</h1>
         <CategoryFilter handleFilterChange={(e) => { filterChange(e); }} />
-      </header>      
+      </div>      
       <table>
         <thead>
           <tr>
