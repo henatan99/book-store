@@ -16,8 +16,10 @@ const BookList = ({
 
   return (
     <div>
-      <h1>Book Store</h1>
-      <CategoryFilter handleFilterChange={(e) => { filterChange(e); }} />
+      <header>
+        <h1>Book Store</h1>
+        <CategoryFilter handleFilterChange={(e) => { filterChange(e); }} />
+      </header>      
       <table>
         <thead>
           <tr>
