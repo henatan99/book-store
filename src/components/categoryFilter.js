@@ -1,16 +1,14 @@
-const categoryFilter = () => {
-    return (
-        <select>
-            <option>All</option>
-            <option>Action</option>
-            <option>Biography</option>
-            <option>History</option>
-            <option>Horror</option>
-            <option>Kids</option>
-            <option>Learning</option>
-            <option>Sci-Fi</option>
-        </select>
-    );
-}
+const CategoryFilter = () => (
+  <select name="filter" value="filter">
+    <option value="filter">All</option>
+    <option value="filter">Action</option>
+    <option value="filter">Biography</option>
+    <option value="filter">History</option>
+    <option value="filter">Horror</option>
+    <option value="filter">Kids</option>
+    <option value="filter">Learning</option>
+    <option value="filter">Sci-Fi</option>
+  </select>
+);
 
-export default categoryFilter
+export default CategoryFilter;
