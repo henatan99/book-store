@@ -39,6 +39,6 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = {
   removeBook,
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(BookList);
