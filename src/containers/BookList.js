@@ -6,6 +6,7 @@ import Book from '../components/Book';
 
 const BookList = ({ books }) => {
   const handleClick = (book) => {
+    console.log(`The book to be removed is id: ${book.id}, title: ${book.title}`);
     removeBook(book);
   };
 
@@ -38,6 +39,6 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = {
   removeBook,
-};
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(BookList);
