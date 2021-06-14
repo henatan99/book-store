@@ -4,9 +4,8 @@ import { connect } from 'react-redux';
 import { removeBook } from '../actions/index';
 import Book from '../components/Book';
 
-const BookList = ({ books }) => {
+const BookList = ({ books, removeBook }) => {
   const handleClick = (book) => {
-    console.log(`The book to be removed is id: ${book.id}, title: ${book.title}`);
     removeBook(book);
   };
 
@@ -31,6 +30,7 @@ const BookList = ({ books }) => {
 
 BookList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.object).isRequired,
+  removeBook: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = (state) => ({
