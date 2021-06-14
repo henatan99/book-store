@@ -15,11 +15,15 @@ const BookList = ({
   const filterChange = ({ target: { value } }) => changeFilter(value);
 
   return (
-    <div>
-      <div calss="books-header">
-        <h1>Book Store</h1>
-        <CategoryFilter handleFilterChange={(e) => { filterChange(e); }} />
-      </div>      
+    <div className="container">
+      <div className="books-header">
+        <div className="left">
+          <h1 className="book-store-title">Book Store CMS</h1>
+          <span className="books">Books</span>
+          <CategoryFilter handleFilterChange={(e) => { filterChange(e); }} />
+        </div>
+        <div className="right" />
+      </div>
       <table>
         <thead>
           <tr>
