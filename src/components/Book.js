@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { removeBook } from '../actions';
 
 const Book = ({ book, handleRemoveBook }) => (
   <tr className="book">
@@ -9,18 +7,14 @@ const Book = ({ book, handleRemoveBook }) => (
     <td className="book-title">{book.title}</td>
     <td className="book-category">{book.category}</td>
     <td className="book-category">
-      <button type="button" onClick={handleRemoveBook}>Remove</button>
+      <button type="button" id={book.id} onClick={handleRemoveBook}>Remove</button>
     </td>
   </tr>
 );
 
 Book.propTypes = {
-  book: PropTypes.objectOf(PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    title: PropTypes.string.isRequired,
-    category: PropTypes.string.isRequired,
-  })).isRequired,
+  book: PropTypes.objectOf(PropTypes.any).isRequired,
   handleRemoveBook: PropTypes.func.isRequired,
 };
 
-export default connect(null, { removeBook })(Book);
+export default Book;
