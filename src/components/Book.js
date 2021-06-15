@@ -35,7 +35,6 @@ const Book = ({ book, handleRemoveBook }) => {
         <span className="chapter-num">Chapter 17</span>
         <button className="update-btn" type="button">UPDATE PROGRESS</button>
       </td>
-
     </tr>
   );
 };
