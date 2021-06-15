@@ -19,18 +19,20 @@ const BookList = ({
       <div className="books-header">
         <div className="left">
           <h1 className="book-store-title">Book Store CMS</h1>
-          <span className="books">Books</span>
+          <span className="books">BOOKS</span>
           <CategoryFilter handleFilterChange={(e) => { filterChange(e); }} />
         </div>
-        <div className="right" />
+        <div className="right">
+          <i className="fas fa-user" />
+        </div>
       </div>
       <table>
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Remove</th>
+            <th />
+            <th />
+            <th />
+            <th />
           </tr>
         </thead>
         <tbody>
