@@ -20,7 +20,9 @@ const Book = ({ book, handleRemoveBook }) => (
       Progress
     </td>
     <td className="chapter">
-      Chapter
+      <span className="current">CURRENT CHAPTER</span>
+      <span className="chapter-num">Chapter 17</span>
+      <button className="update-btn" type="button">UPDATE PROGRESS</button>
     </td>
 
   </tr>
