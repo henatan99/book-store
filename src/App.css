@@ -265,7 +265,6 @@
 
 .form-input, .form-select, .form-option {
   height: 45px;
-  /* padding: 13px 571px 13px 17px; */
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
