@@ -58,3 +58,14 @@
   border: solid 1px;
   border-radius: 22.5px;
 }
+
+.book {
+  margin: 0 10% 0 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: row;
+}

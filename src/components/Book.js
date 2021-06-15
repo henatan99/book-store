@@ -7,7 +7,7 @@ const Book = ({ book, handleRemoveBook }) => (
       {/* <td className="book-id">{book.id}</td> */}
       <span className="book-category">{book.category}</span>
       <h2 className="book-title">{book.title}</h2>
-      <ul>
+      <ul className="lists">
         <li>Comments</li>
         <li className="book-category">
           <button type="button" id={book.id} onClick={handleRemoveBook}>Remove</button>
