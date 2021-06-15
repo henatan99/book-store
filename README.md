@@ -1,6 +1,38 @@
 # Book Store App 
 
-This project is building a an application that will help organize and manage a bookstore in a fictional company, using react-redux.
+This project is building a an application that will help organize and manage a bookstore in a fictional company, using react-redux. 
+
+![Screenshot](docs/Screenshot.png)
+
+## Actions 
+### `CREATE_BOOK`
+### `REMOVE_BOOK`
+### `CATEGORY_FILTER` 
+
+## Reducers 
+### `books` reducer 
+### `filter` reducer
+### `rootReducer` which combines the other reducers
+
+## Components 
+### Book 
+The Book DOM component renders the book title, author, category, progress. It comment, remove and edit button elements. The progress element uses a dynamics circle elemet.
+
+### CategoryFilter
+The caegory filter DOM component renders the list of books based on the category option selected. 
+
+### ProgressRing
+The ProgressRing DOM component renders the progress element with a dynamic circle that displays percent progress graphically.
+
+## Containers 
+### BookForm 
+The BookForm DOM component renders the form with `input` `select` and `button` elements. It is connected to the createBook action.
+
+## BookList
+The BookList DOM component is responsible for rendering the Book components with `books`, `filter`, `removeBook` and `changeFilter`. It is connected to `store` with `mapStateToProps` and `mapSispatchToProps` methods. 
+
+## App
+The App is the parent component which renders all the main components and also `Provide` `store`.
 
 ## Live demo [Heroku]
 [Book Store App](https://hen-book-store.herokuapp.com/)
@@ -115,6 +147,7 @@ Give a :star:️ if you like this project!
 ## Acknowledgment 
 
 - Facebook team who created creat-react-app API 
+- [Zeplin project](https://app.zeplin.io/projects)
 
 ## :memo: License
 

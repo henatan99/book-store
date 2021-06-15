@@ -15,18 +15,18 @@ const BookList = ({
   const filterChange = ({ target: { value } }) => changeFilter(value);
 
   return (
-    <div>
-      <h1>Book Store</h1>
-      <CategoryFilter handleFilterChange={(e) => { filterChange(e); }} />
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Remove</th>
-          </tr>
-        </thead>
+    <div className="container">
+      <div className="books-header">
+        <div className="left">
+          <h1 className="book-store-title">Book Store CMS</h1>
+          <span className="books">BOOKS</span>
+          <CategoryFilter handleFilterChange={(e) => { filterChange(e); }} />
+        </div>
+        <div className="right">
+          <span className="iconify" data-icon="carbon:user-avatar-filled-alt" data-inline="false" />
+        </div>
+      </div>
+      <table className="book-list-table">
         <tbody>
           {books.filter((book) => book.category === filter || filter === 'All').map(
             (book) => (
