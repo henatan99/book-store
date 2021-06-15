@@ -31,7 +31,13 @@
   width: 240px;
   height: 37px;
   margin: 6px 47px 2px 0;
-  font-family: Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:
+    Montserrat,
+    "Segoe UI",
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
   font-size: 30px;
   font-weight: bold;
   font-stretch: normal;
@@ -41,9 +47,16 @@
   color: #0290ff;
 }
 
-.books, .filter {
+.books,
+.filter {
   height: 16px;
-  font-family: Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:
+    Montserrat,
+    "Segoe UI",
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
@@ -92,7 +105,18 @@
 .book-title {
   margin-block-start: 0.4rem;
   margin-block-end: 0.2rem;
-  font-family: RobotoSlab, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    RobotoSlab,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 22px;
   font-weight: bold;
   font-stretch: normal;
@@ -104,7 +128,13 @@
 
 .book-category {
   opacity: 0.5;
-  font-family: Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:
+    Montserrat,
+    "Segoe UI",
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -129,8 +159,21 @@
   margin-right: 1rem;
 }
 
-.book-author, .list-item, .list-item button {
-  font-family: RobotoSlab, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.book-author,
+.list-item,
+.list-item button {
+  font-family:
+    RobotoSlab,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -163,7 +206,18 @@
 
 .current {
   opacity: 0.5;
-  font-family: RobotoSlab, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    RobotoSlab,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 13px;
   font-weight: 300;
   font-stretch: normal;
@@ -175,7 +229,18 @@
 
 .chapter-num {
   margin: 0.75rem 0 1.5rem 0;
-  font-family: RobotoSlab, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    RobotoSlab,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 16px;
   font-weight: 300;
   font-stretch: normal;
@@ -190,7 +255,18 @@
   border: 0;
   border-radius: 3px;
   background-color: #3690ff;
-  font-family: RobotoSlab, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    RobotoSlab,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 13px;
   font-weight: 300;
   font-stretch: normal;
@@ -214,7 +290,18 @@
 }
 
 .progress-num {
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    Montserrat,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 32px;
   font-weight: normal;
   font-stretch: normal;
@@ -228,7 +315,18 @@
 
 .completed {
   opacity: 0.5;
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    Montserrat,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -247,28 +345,53 @@
 }
 
 .book-form {
+  width: 100%;
   display: grid;
   grid-template-columns: 50% 20% 20%;
-  column-gap: 5%;  
+  column-gap: 5%;
 }
 
 .book-form-title {
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    Montserrat,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 20px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.18px;
-  color: #888888;
+  color: #888;
 }
 
-.form-input, .form-select, .form-option {
+.form-input,
+.form-select,
+.form-option {
   height: 45px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    Montserrat,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -283,7 +406,18 @@
   border-radius: 3px;
   border: 0;
   background-color: #3690ff;
-  font-family: RobotoSlab, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    RobotoSlab,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 13px;
   font-weight: bold;
   font-stretch: normal;
