@@ -5,9 +5,9 @@ This project is building a an application that will help organize and manage a b
 ![Screenshot](docs/Screenshot.png)
 
 ## Actions 
-### CREATE_BOOK
-### REMOVE_BOOK
-### CATEGORY_FILTER 
+### `CREATE_BOOK`
+### `REMOVE_BOOK`
+### `CATEGORY_FILTER` 
 
 ## Reducers 
 ### `books` reducer 
