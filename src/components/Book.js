@@ -8,11 +8,11 @@ const Book = ({ book, handleRemoveBook }) => (
       <span className="book-category">{book.category}</span>
       <h2 className="book-title">{book.title}</h2>
       <ul className="lists">
-        <li>Comments</li>
-        <li className="book-category">
+        <li className="list-item">Comments</li>
+        <li className="list-item book-category">
           <button type="button" id={book.id} onClick={handleRemoveBook}>Remove</button>
         </li>
-        <li>Edit</li>
+        <li className="list-item">Edit</li>
       </ul>
     </td>
     <td className="progress">

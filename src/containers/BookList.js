@@ -26,14 +26,7 @@ const BookList = ({
           <i className="fas fa-user" />
         </div>
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th />
-            <th />
-            <th />
-          </tr>
-        </thead>
+      <table className="book-list-table">
         <tbody>
           {books.filter((book) => book.category === filter || filter === 'All').map(
             (book) => (
