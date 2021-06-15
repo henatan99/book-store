@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ProgressRing from './ProgressRing';
 
 const Book = ({ book, handleRemoveBook }) => (
   <tr className="book">
@@ -17,6 +18,7 @@ const Book = ({ book, handleRemoveBook }) => (
       </ul>
     </td>
     <td className="progress">
+      <ProgressRing stroke={5} progress={Math.floor(Math.random() * 90)} radius={34} />
       Progress
     </td>
     <td className="chapter">
