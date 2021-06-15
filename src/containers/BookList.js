@@ -23,7 +23,7 @@ const BookList = ({
           <CategoryFilter handleFilterChange={(e) => { filterChange(e); }} />
         </div>
         <div className="right">
-          <i className="fas fa-user" />
+          <span className="iconify" data-icon="carbon:user-avatar-filled-alt" data-inline="false" />
         </div>
       </div>
       <table className="book-list-table">

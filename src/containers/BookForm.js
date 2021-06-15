@@ -50,9 +50,9 @@ class BookForm extends React.Component {
               value={category}
               placeholder="category"
             >
-              {CATEGORIES.map((category) => <option key={`book-${category}`} value={category}>{category}</option>)}
+              {CATEGORIES.map((category) => <option className="form-option" key={`book-${category}`} value={category}>{category}</option>)}
             </select>
-            <button className="form-btn" type="submit">Add Book</button>
+            <button className="form-btn" type="submit">ADD BOOK</button>
           </form>
         </div>
 
