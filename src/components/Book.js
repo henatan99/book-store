@@ -22,18 +22,23 @@ const Book = ({ book, handleRemoveBook }) => {
       </td>
       <td className="progress">
         <ProgressRing stroke={5} progress={progressVal} radius={34} />
-        <h2>{progressVal}</h2>
-        <span>Completed</span>
+        <div className="progress-info">
+          <h2 className="progress-num">
+            {progressVal}
+            %
+          </h2>
+          <span className="completed">Completed</span>
+        </div>
       </td>
       <td className="chapter">
         <span className="current">CURRENT CHAPTER</span>
         <span className="chapter-num">Chapter 17</span>
         <button className="update-btn" type="button">UPDATE PROGRESS</button>
       </td>
-  
+
     </tr>
   );
-} 
+};
 
 Book.propTypes = {
   book: PropTypes.objectOf(PropTypes.any).isRequired,
