@@ -10,7 +10,7 @@ const Book = ({ book, handleRemoveBook }) => (
       <span className="book-author">Author</span>
       <ul className="lists">
         <li className="list-item">Comments</li>
-        <li className="list-item book-category">
+        <li className="list-item book-category-btn">
           <button type="button" id={book.id} onClick={handleRemoveBook}>Remove</button>
         </li>
         <li className="list-item">Edit</li>
