@@ -7,6 +7,7 @@ const Book = ({ book, handleRemoveBook }) => (
       {/* <td className="book-id">{book.id}</td> */}
       <span className="book-category">{book.category}</span>
       <h2 className="book-title">{book.title}</h2>
+      <span className="book-author">Author</span>
       <ul className="lists">
         <li className="list-item">Comments</li>
         <li className="list-item book-category">
